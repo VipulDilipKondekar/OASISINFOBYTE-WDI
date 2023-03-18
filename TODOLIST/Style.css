@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+body{
+    background-color: black;
+    font-family: 'Exo', sans-serif;
+    color: rgb(197, 32, 32);
+}
+.container{
+    padding:1em;
+    display:grid;
+    gap:2em;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Exo', sans-serif;
+    background: black;
+    
+}
+
+.to-do-list_container{
+    width:auto;
+    height:auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding:1.5em;
+    gap:1em;
+    font-family: 'Exo', sans-serif;
+}
+.input_container {
+    
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+    gap:0.5em;
+}
+.input_container input{ 
+    font-size: 22px;
+    padding:0.1em;
+    outline: none;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 40px;
+    color:black;
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#EFEFEF;
+    padding-left: 40px;
+}
+.add_button{
+    background-color: rgb(236, 1, 1);
+    border: 2px solid rgb(197, 15, 15);
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 40px 40px;
+    padding: 10px 20px 0 0;
+    cursor: pointer;
+    text-align: center;
+}
+.add_button:hover{
+    background-color: green;
+    border: 2px solid green;
+    transition: 1.5s;
+
+}
+
+.input_container button{
+    padding: 15px 35px;
+}
+
+#add_button.active{
+    opacity:1;
+}
+.taskscontainer{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1em;
+    width:100%;
+    font-weight: 400;
+    color: black;
+}
+
+.add_list.completed span{
+    text-decoration: line-through;
+    color:black;
+}
+.taskscontainer .add_list{
+    width:100%;
+    height:auto;
+    background-color:#efefef ;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: space-evenly;
+    align-items: center;
+    padding:1em;
+    border: 5px solid rgb(20, 17, 17);
+    border-radius: 40px;
+    
+}
+.taskscontainer .add_list .item_btn{
+    justify-self: end;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1em;
+    color: red;
+    cursor: pointer;
+}
+::placeholder{
+    text-align: left; 
+}
